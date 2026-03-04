@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rellena tu CV</title>
+  </head>
+  <body>
+    <h1>Rellena tu CV</h1>
+
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <p>
+          <label for="provincia">Provincia</label><br />
+          <select id="provincia" name="provincia">
+            <option value="">- selecciona -</option>
+            <option value="alicante">Alicante</option>
+            <option value="madrid">Madrid</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="valencia">Valencia</option>
+          </select>
+        </p>
+
+        <p>
+          Fecha de nacimiento<br />
+
+          <input type="number" name="dia" min="1" max="31" size="2" />
+          de
+
+          <select name="mes">
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+          </select>
+
+          de
+
+          <input type="number" name="anio" min="1900" max="2100" size="4" />
+        </p>
+
+        <p>
+          <label for="temas">Temas de interés</label><br />
+          <select id="temas" name="temas" size="4" multiple>
+            <option>Administración de bases de datos</option>
+            <option>Análisis y programación</option>
+            <option>Arquitectura</option>
+            <option>Calidad</option>
+            <option>ERP, CRM, Business Intelligence</option>
+          </select>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
